@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "./Layout.css";
 import "./Dashboard.css";
+import { getData } from "../../actions/dataActions";
 import { connect } from "react-redux";
-import {  } from "../../actions/dataActions";
 
 
 class Dashboard extends Component {
@@ -10,14 +10,20 @@ class Dashboard extends Component {
 
   };
 
+    componentWillMount() {
+      this.props.getData();
+    };
+
+
 
   render() {
+    console.log(this.props.data.data.title)
     let content;
     let data = this.props.data;
       content = (
         <>
         <h3>Hello world</h3>
-        <h3>  {this.props.data}  </h3>
+        <h3>  {this.props.data.title}  </h3>
 
         </>
       );
@@ -38,5 +44,5 @@ const mapStateToProps = state => ({
 
 export default connect(
   mapStateToProps,
-  { }
+  { getData }
 )(Dashboard);
