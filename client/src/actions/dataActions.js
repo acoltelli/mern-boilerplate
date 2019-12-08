@@ -21,7 +21,7 @@ import { GET_DATA } from "./types";
 
 export const getData = () => dispatch => {
   axios
-    .get('https://jsonplaceholder.typicode.com/todos/1')
+    .get('https://jsonplaceholder.typicode.com/users')
     .then(res =>
       dispatch({
         type: GET_DATA,

@@ -3,6 +3,7 @@ import "./Layout.css";
 import "./Dashboard.css";
 import { getData } from "../../actions/dataActions";
 import { connect } from "react-redux";
+import ReactJson from 'react-json-view'
 
 
 class Dashboard extends Component {
@@ -16,14 +17,15 @@ class Dashboard extends Component {
 
   render() {
     let content;
-    let data = this.props.data.data;
-    console.log(this.props.data.data)
-    let m = data.map(m => (m["name"] ));
+    let d = this.props.data;
+
+    // console.log(p)
+    // let m = data.map( x => (<h3> {x} </h3>)  ) ;
 
       content = (
         <>
         <h3>Hello world</h3>
-        <h3> {m} </h3>
+        <ReactJson src={d} />
         </>
       );
 
