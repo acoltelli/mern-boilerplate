@@ -14,14 +14,10 @@ class Layout extends Component {
 
 
   render() {
-
     let dashboardContent;
-
       dashboardContent = (
         <>
-
-          <div className="right">
-
+          <div>
             <Switch>
               <Route
                 exact
@@ -45,18 +41,14 @@ class Layout extends Component {
   }
 }
 
-Layout.propTypes = {
-
-};
 
 const mapStateToProps = state => ({
-  auth: state.auth,
-  habits: state.habits
+  data: state.data
 });
 
 export default withRouter(
   connect(
     mapStateToProps,
-    { getData}
+    { getData }
   )(Layout)
 );

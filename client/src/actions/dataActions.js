@@ -26,7 +26,7 @@ import { GET_DATA } from "./types";
 export const getData = () => dispatch => {
   // dispatch(setHabitsLoading());
   axios
-    .get("/api/data")
+    .get('https://jsonplaceholder.typicode.com/todos/1')
     .then(res =>
       dispatch({
         type: GET_DATA,

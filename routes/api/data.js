@@ -7,7 +7,6 @@ const isEmpty = require("is-empty");
 
 router.get(
   "/",
-  // passport.authenticate("jwt", { session: false }),
   async (req, res) => {
     const OWNER = {
       id: req.user.id,

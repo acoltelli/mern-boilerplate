@@ -13,10 +13,10 @@ app.use(
 );
 app.use(bodyParser.json());
 
-// DB Config
+// DB
 const db = require("./config/keys").mongoURI;
 
-// Connect to MongoDB
+// MongoDB
 mongoose
   .connect(
     db,
@@ -25,15 +25,8 @@ mongoose
   .then(() => console.log("MongoDB successfully connected"))
   .catch(err => console.log(err));
 
-// Passport middleware
-// app.use(passport.initialize());
-
-// Passport config
-// require("./config/passport")(passport);
-
 // Routes
 app.use("/api/data", data);
-
 
 // Serve static assets if in production
 if (process.env.NODE_ENV === 'production') {

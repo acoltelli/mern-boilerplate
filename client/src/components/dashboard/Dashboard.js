@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./MainContent.css";
+import "./Layout.css";
 import "./Dashboard.css";
 import { connect } from "react-redux";
 import {  } from "../../actions/dataActions";
@@ -13,9 +13,12 @@ class Dashboard extends Component {
 
   render() {
     let content;
+    let data = this.props.data;
       content = (
         <>
         <h3>Hello world</h3>
+        <h3>  {this.props.data}  </h3>
+
         </>
       );
 
@@ -30,8 +33,7 @@ class Dashboard extends Component {
 }
 
 const mapStateToProps = state => ({
-
-
+  data: state.data
 });
 
 export default connect(
