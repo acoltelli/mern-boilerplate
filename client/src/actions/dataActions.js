@@ -2,7 +2,6 @@ import axios from "axios";
 import { GET_DATA } from "./types";
 
 
-// // Create Habit
 // export const createHabit = habitData => dispatch => {
 //   axios
 //     .post("/api/habits/create", habitData)
@@ -20,11 +19,7 @@ import { GET_DATA } from "./types";
 //     );
 // };
 
-
-
-// Get all habits for specific user
 export const getData = () => dispatch => {
-  // dispatch(setHabitsLoading());
   axios
     .get('https://jsonplaceholder.typicode.com/todos/1')
     .then(res =>

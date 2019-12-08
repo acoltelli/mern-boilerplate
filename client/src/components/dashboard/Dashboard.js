@@ -7,24 +7,23 @@ import { connect } from "react-redux";
 
 class Dashboard extends Component {
   state = {
-
   };
 
-    componentWillMount() {
+  componentDidMount() {
       this.props.getData();
     };
 
 
-
   render() {
-    console.log(this.props.data.data.title)
     let content;
-    let data = this.props.data;
+    let data = this.props.data.data;
+    console.log(this.props.data.data)
+    let m = data.map(m => (m["name"] ));
+
       content = (
         <>
         <h3>Hello world</h3>
-        <h3>  {this.props.data.title}  </h3>
-
+        <h3> {m} </h3>
         </>
       );
 
