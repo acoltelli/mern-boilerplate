@@ -18,7 +18,7 @@ class App extends Component {
             <Switch>
 
               <Route exact path="/" component={Layout} />
-
+              <Route component={NotFound} />
             </Switch>
           </div>
         </Router>

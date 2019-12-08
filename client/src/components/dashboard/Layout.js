@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { getData } from "../../actions/dataActions";
 import { BrowserRouter as Router, Route, Switch, withRouter } from "react-router-dom";
@@ -47,7 +46,7 @@ class Layout extends Component {
 }
 
 Layout.propTypes = {
-  
+
 };
 
 const mapStateToProps = state => ({

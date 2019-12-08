@@ -1,7 +1,5 @@
 import axios from "axios";
-import {
-  GET_DATA
-} from "./types";
+import { GET_DATA } from "./types";
 
 
 // // Create Habit
