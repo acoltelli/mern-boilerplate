@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "./store";
-import Dashboard from "./components/dashboard/Dashboard";
-import NotFound from "./components/404/404";
+import Dashboard from "./components/Dashboard";
+import NotFound from "./components/404";
 
 
 

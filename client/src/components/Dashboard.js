@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Dashboard.css";
-import { getData } from "../../actions/dataActions";
+import { getData } from "../actions/dataActions";
 import { connect } from "react-redux";
 import ReactJson from 'react-json-view'
 
