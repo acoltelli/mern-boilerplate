@@ -1,86 +1,11 @@
-.modal-wrapper {
+.wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
-.chart-wrapper {
-  display: flex;
-  justify-content: center;
-  width: 70%;
-  padding-bottom: 10%;
-}
-
-.cal-wrapper {
-  padding-top: 10%;
-  padding-left:4%;
-  padding-right:4%;
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-}
-
-.habits-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 1rem;
-  width: 98%;
-}
-
-.habit-icon {
-  height: 125px;
-  width: 150px;
-  flex-basis: 150px;
-  border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 0.75rem;
-  border: 1px solid $gray;
-  margin: .5rem .5rem .5rem 0rem;
-  text-align: center;
-  transition: all 0.25s ease 0s;
-  word-break: break-word;
-  color: $black;
+.main-content {
+  flex: 1 1 auto;
+  margin-left: 2rem;
   background-color: $white;
-  font-family: $code;
-
-  &:hover {
-    color: $primaryBlue;
-    border: 1px solid $primaryBlue;
-    transition: all 0.25s ease 0s;
-    cursor: pointer;
-    transform: translateY(-2.5px);
-  }
-
-  &:hover .habit-info-button {
-    display: block;
-    transition: all 0.25s ease 0s;
-  }
-}
-
-.habit-name {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 100px;
-}
-
-.habit-info-button {
-  display: none;
-  margin-top: 1rem;
-  text-transform: uppercase;
-  width: 125px;
-  border: 1px solid $primaryBlue;
-  color: $primaryBlue;
-  font-size: 0.2rem;
-  transition: all 0.25s ease 0s;
-  padding: 0.5rem;
-  border-radius: 4px;
-
-  &:hover {
-    background-color: $hoverBlue;
-    color: $white;
-    transition: all 0.25s ease 0s;
-  }
+  margin-top: 70px;
 }

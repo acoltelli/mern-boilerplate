@@ -4,8 +4,6 @@ import { Provider } from "react-redux";
 import store from "./store";
 import Dashboard from "./components/dashboard/Dashboard";
 import NotFound from "./components/404/404";
-import "./App.css";
-
 
 
 

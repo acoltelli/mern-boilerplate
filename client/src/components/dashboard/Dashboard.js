@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./Layout.css";
 import "./Dashboard.css";
 import { getData } from "../../actions/dataActions";
 import { connect } from "react-redux";
@@ -17,15 +16,16 @@ class Dashboard extends Component {
 
   render() {
     let content;
-    let d = this.props.data;
+    let k = JSON.stringify(this.props.data);
+    const {data} = this.props.data;
+    let m = data.map( x => (x     ));
+    for (let i in data){console.log(i)}
 
-    // console.log(p)
-    // let m = data.map( x => (<h3> {x} </h3>)  ) ;
 
       content = (
         <>
         <h3>Hello world</h3>
-        <ReactJson src={d} />
+        <div>{k} </div>
         </>
       );
 
