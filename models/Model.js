@@ -2,8 +2,8 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 
-const HabitSchema = new Schema({
+const TestSchema = new Schema({
 
 });
 
-module.exports = Habit = mongoose.model("habits", HabitSchema);
+module.exports = Test  = mongoose.model("test", TestSchema);
